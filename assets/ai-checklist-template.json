@@ -18,6 +18,6 @@
     "q": "Did the authors report whether their code is open source, where to find it and is the link permanent?",
     "hint": "Typically at the end of the paper, there is a section 'Coda availability' or related.",
     "severity": "major",
-    "section": "Code Availability"
+    "section": "Methods / Code"
   }
 ]
