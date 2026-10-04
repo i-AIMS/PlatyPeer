@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>iAIMS Reviewing tool</title>
+<title>PlatyPeer</title>
 <meta name="description" content="A working instrument for reviewing healthcare-AI papers. Line-anchored notes, a two-read triage, an appraisal table, and a submittable report." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <script data-goatcounter="https://iaimsreviewtool2026.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>
 /* ============================================================
-   iAIMS Reviewing tool — construction-grid world
+   PlatyPeer — construction-grid world
    Measure first. The lattice is the instrument.
    ============================================================ */
 :root{
@@ -1526,7 +1526,7 @@ function reportFileName(ext){
   return slug+"-"+d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())+"."+ext;
 }
 function saveTxt(){
-  const t=draftText()+"\nGenerated: "+new Date().toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})+" · iAIMS reviewing tool\n";
+  const t=draftText()+"\nGenerated: "+new Date().toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})+" · PlatyPeer\n";
   try{
     const blob=new Blob([t],{type:"text/plain;charset=utf-8"});
     const a=document.createElement("a");
@@ -1582,7 +1582,7 @@ async function savePdf(){
   function footer(){
     setD(C.hair);doc.setLineWidth(.2);doc.line(ML,H-MB-4,W-MR,H-MB-4);
     doc.setFont("courier","normal");doc.setFontSize(7);setF(C.ink3);
-    doc.text("IAIMS REVIEWING TOOL",ML,H-MB-1.5,{charSpace:.4});
+    doc.text("PlatyPeer",ML,H-MB-1.5,{charSpace:.4});
     doc.text("PAGE "+doc.getCurrentPageInfo().pageNumber,W-MR,H-MB-1.5,{align:"right",charSpace:.4});
   }
   function newPage(){
