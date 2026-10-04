@@ -1,58 +1,23 @@
 [
   {
-    "id": "ai-test-set",
-    "q": "Did they keep a proper held-out test set for the model?",
-    "hint": "Look for train / validation / test split, no leakage of test into tuning.",
+    "id": "external-test-set",
+    "q": "Did they use an external test dataset?",
+    "hint": "Look whether an independent dataset was used to test the model.",
     "severity": "major",
     "section": "Methods"
   },
   {
-    "id": "ai-leakage",
-    "q": "Did they rule out data leakage (patients, scanners, time)?",
-    "hint": "Same patient or site in train and test inflates performance.",
-    "severity": "major",
-    "section": "Methods"
-  },
-  {
-    "id": "ai-external",
-    "q": "Is there external validation on an independent cohort?",
-    "hint": "Single-centre only = higher risk of overfitting.",
-    "severity": "major",
-    "section": "Results"
-  },
-  {
-    "id": "ai-metrics",
-    "q": "Are the metrics appropriate with confidence intervals?",
-    "hint": "AUC / sensitivity / specificity / calibration — with CIs, not point estimates alone.",
-    "severity": "major",
-    "section": "Methods"
-  },
-  {
-    "id": "ai-baseline",
-    "q": "Did they compare against a sensible baseline or clinicians?",
-    "hint": "No baseline makes claimed gains uninterpretable.",
+    "id": "existing-vs-developed",
+    "q": "Did the authors report whether they used an existing model or developed their own?",
+    "hint": "Look at the end of the introduction, aim is often stated there.",
     "severity": "minor",
-    "section": "Discussion"
+    "section": "Aim"
   },
   {
-    "id": "ai-transparency",
-    "q": "Are data, code and model details shared enough to reproduce?",
-    "hint": "Dataset access, preprocessing, hyperparameters, random seeds.",
-    "severity": "minor",
-    "section": "Methods"
-  },
-  {
-    "id": "ai-failure",
-    "q": "Did they analyse failures, subgroups and fairness?",
-    "hint": "Error cases, subgroup performance, bias across sex / age / site.",
+    "id": "open-source",
+    "q": "Did the authors report whether their code is open source, where to find it and is the link permanent?",
+    "hint": "Typically at the end of the paper, there is a section 'Coda availability' or related.",
     "severity": "major",
-    "section": "Results"
-  },
-  {
-    "id": "ai-claim",
-    "q": "Do the clinical claims match what was actually tested?",
-    "hint": "Watch for overreach from retrospective AUC to bedside benefit.",
-    "severity": "major",
-    "section": "Discussion"
+    "section": "Code Availability"
   }
 ]
