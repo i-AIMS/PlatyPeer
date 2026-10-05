@@ -53,7 +53,7 @@
     "q": "Did the authors go beyond performance to assess explainability / interpretability / transparency of the model? (XAI)",
     "hint": "Might be in the methods or could also pop up in the discussion. This step aims to relieve the rat race on solely model performance.",
     "severity": "minor",
-    "section": "Methods / Discussion"
+    "section": "Methods / Disc."
   },
   {
     "id": "missing-data",
@@ -74,7 +74,7 @@
     "q": "In case of classification, did the authors report on class imbalance?",
     "hint": "Class imbalance might drive model bias. In a dataset with 99 people with MS and 1 healthy control, a model that always predicts 'MS' is 99% accurate.",
     "severity": "major",
-    "section": "Introduction / Objective"
+    "section": "Introd. / Aim"
   },
   {
     "id": "ai-in-title",
