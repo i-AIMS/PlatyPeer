@@ -70,7 +70,7 @@
     "section": "Methods"
   },
   {
-    "id": "ai-aim",
+    "id": "class-imbalance",
     "q": "In case of classification, did the authors report on class imbalance?",
     "hint": "Class imbalance might drive model bias. In a dataset with 99 people with MS and 1 healthy control, a model that always predicts 'MS' is 99% accurate.",
     "severity": "major",
